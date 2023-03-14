@@ -49,7 +49,7 @@ public class Client {
     @NonNull
     private int authority;
     @Column(name = "social_card")
-    private long socialCard;
+    private String socialCard;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
